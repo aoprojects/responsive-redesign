@@ -1,0 +1,37 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+  /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: orange;
+    padding: 35px;
+    /*display: flex;*/
+}
+
+.center-of-page {
+	position: fixed;
+	margin: 0 auto;
+}
+
+.row {
+
+}
+
+
+
+/*page layout and sizing*/
+#top-area {
+	border-bottom: 1px solid white;
+	height: 50%;
+
+}
+#bottom-area {
+	height: 50%;
+	margin-top: 50px;
+}
+
+
+
