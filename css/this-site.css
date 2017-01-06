@@ -8,6 +8,7 @@ body {
   /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: #333;
     padding: 35px;
+    color: #eee;
     /*display: flex;*/
 }
 
@@ -23,12 +24,10 @@ body {
 /*page layout and sizing*/
 #why-responsive {
 	border-bottom: 1px solid white;
-	height: 50%;
-
 }
+
 #portfolio {
-	height: 50%;
-	margin-top: 50px;
+
 }
 
 
