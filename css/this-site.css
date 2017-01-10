@@ -4,11 +4,28 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+/*note: bootstrap breakpoints are as follows
+
+xs and mobile
+tiniest to 767px
+
+small and tablet
+768px - 991px
+
+medium and desktop
+992px - 1199px
+
+large and desktop
+1200px and up
+
+*/
+
+
 body {
   /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: #333;
-    padding: 35px;
     color: #eee;
+    padding: 35px;
     /*display: flex;*/
 }
 
@@ -16,9 +33,24 @@ body {
 	position: fixed;
 	margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+	main section {
+		width: 50%;
+		height: 50%;
+		float: left;
+		overflow: hidden;
+		border: 1px solid white;
+	}
+} /*end media query for larger than xs devices*/
 
-.row {
 
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	/*todo unhide the nav*/
 }
 
 /*page layout and sizing*/
@@ -26,9 +58,6 @@ body {
 	border-bottom: 1px solid white;
 }
 
-#portfolio {
-
-}
 
 
 
