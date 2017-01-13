@@ -23,10 +23,21 @@ large and desktop
 
 body {
   /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #333;
+    background-color: #333; /*aka rgb(71,71,71)*/
     color: #eee;
     padding: 35px;
     /*display: flex;*/
+}
+
+.btn-default {
+	background-color: transparent;
+	color: white;
+	font-style: Helvetica;
+}
+.btn-default:hover {
+	background-color: rgba(130,130,130,0.5);
+	transition: ease-in 0.3s;
+	color: white;
 }
 
 #center-main-section {
@@ -35,31 +46,36 @@ body {
 	padding: 25px 25px 40px 25px;
 }/*default for all screen sizes*/
 
-@media only screen and (min-width: 992px) {
-
-}
-
 .center-of-page {
 	position: fixed;
 	margin: 0 auto;
 }
-
+body {
+	width: 100%;
+	padding: 0;
+}
+main {
+	width: 100%;
+}
+main section {
+	width: 100%;
+}
 /*below is styling for backgrounds of each section since sass isn't installed yet*/
 main section#why-responsive {
-	min-height: 400px;
 	background-color: rgba(130,130,130,10);
+	padding: 40px;
 }/*first section, upper left*/
 main section#your-options {
-	min-height: 400px;
 	background-color: rgba(100,100,100,10);
+	padding: 40px;
 }/*second section, upper right*/
 main section#why-us {
-	min-height: 400px;
 	background-color: rgba(70,70,70,10);
+	padding: 40px;
 }/*third section, lower left*/
 main section#portfolio {
-	min-height: 400px;
 	background-color: rgba(40,40,40,10);
+	padding: 40px;
 }/*fourth section, lower right*/
 
 
@@ -68,23 +84,19 @@ main section#portfolio {
 
 	}/*for maing summary area to be centered when grid view*/
 	main section {
-		min-width: 50vw !important;
-		height: 50vh !important;
 		float: left;
-		overflow: hidden;
-		border: 1px solid white;
 	}
 	main section#why-responsive {
-		min-height: 400px;
+		min-height: 500px;
 	}/*first section, upper left*/
 	main section#your-options {
-		min-height: 400px;
+		min-height: 500px;
 	}/*second section, upper right*/
 	main section#why-us {
-
+		min-height: 500px;
 	}/*third section, lower left*/
 	main section#portfolio {
-
+		min-height: 500px;
 	}/*fourth section, lower right*/
 	main section#middle-button {
 
@@ -102,9 +114,7 @@ nav {
 }
 
 /*page layout and sizing*/
-#why-responsive {
-	border-bottom: 1px solid white;
-}
+
 
 
 
