@@ -29,18 +29,66 @@ body {
     /*display: flex;*/
 }
 
+#center-main-section {
+	display: hidden;
+	text-align: center;
+	padding: 25px 25px 40px 25px;
+}/*default for all screen sizes*/
+
+@media only screen and (min-width: 992px) {
+
+}
+
 .center-of-page {
 	position: fixed;
 	margin: 0 auto;
 }
+
+/*below is styling for backgrounds of each section since sass isn't installed yet*/
+main section#why-responsive {
+	min-height: 400px;
+	background-color: rgba(130,130,130,10);
+}/*first section, upper left*/
+main section#your-options {
+	min-height: 400px;
+	background-color: rgba(100,100,100,10);
+}/*second section, upper right*/
+main section#why-us {
+	min-height: 400px;
+	background-color: rgba(70,70,70,10);
+}/*third section, lower left*/
+main section#portfolio {
+	min-height: 400px;
+	background-color: rgba(40,40,40,10);
+}/*fourth section, lower right*/
+
+
 @media only screen and (min-width: 768px) {
+	main #center-main-section {
+
+	}/*for maing summary area to be centered when grid view*/
 	main section {
-		width: 50%;
-		height: 50%;
+		min-width: 50vw !important;
+		height: 50vh !important;
 		float: left;
 		overflow: hidden;
 		border: 1px solid white;
 	}
+	main section#why-responsive {
+		min-height: 400px;
+	}/*first section, upper left*/
+	main section#your-options {
+		min-height: 400px;
+	}/*second section, upper right*/
+	main section#why-us {
+
+	}/*third section, lower left*/
+	main section#portfolio {
+
+	}/*fourth section, lower right*/
+	main section#middle-button {
+
+	}/*should be middle of site on desktop only*/
 } /*end media query for larger than xs devices*/
 
 
