@@ -61,9 +61,19 @@ main section {
 	width: 100%;
 }
 /*below is styling for backgrounds of each section since sass isn't installed yet*/
+main #center-main-section {
+	background-color: rgba(160,160,160,10);
+	padding: 50px;
+	/*color: rgba(36,0,41,1.0);*/
+	/*color: rgba(46,6,40,1.0);*/
+	color: rgba(76,50,87,1.0);	
+}/*summary area*/
+main #center-main-section h1 {
+	color: rgba(46,6,40,1.0);
+}
 main section#why-responsive {
 	background-color: rgba(130,130,130,10);
-	padding: 40px;
+	padding: 50px;
 }/*first section, upper left*/
 main section#your-options {
 	background-color: rgba(100,100,100,10);
@@ -71,11 +81,11 @@ main section#your-options {
 }/*second section, upper right*/
 main section#why-us {
 	background-color: rgba(70,70,70,10);
-	padding: 40px;
+	padding: 50px;
 }/*third section, lower left*/
 main section#portfolio {
 	background-color: rgba(40,40,40,10);
-	padding: 40px;
+	padding: 50px;
 }/*fourth section, lower right*/
 
 
