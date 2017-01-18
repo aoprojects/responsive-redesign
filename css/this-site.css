@@ -74,81 +74,23 @@ main section:nth-child(2n) {
 	background-color: rgba(63,67,64,1.0);
 	color: #eee;
 }
-main section#why-responsive {
-
-}/*first section, upper left*/
-main section#your-options {
-
-}/*second section, upper right*/
-main section#why-us {
-
-}/*third section, lower left*/
-main section#portfolio {
-
-}/*fourth section, lower right*/
-
 
 @media only screen and (min-width: 768px) {
-	main #center-main-section {
-
-	}/*for maing summary area to be centered when grid view*/
 	main section {
 		float: left;
 		min-height: 500px;
-	}
-	main section#why-responsive {
-	
-	}/*first section, upper left*/
-	main section#your-options {
-	
-	}/*second section, upper right*/
-	main section#why-us {
-		
-	}/*third section, lower left*/
-	main section#portfolio {
-
-	}/*fourth section, lower right*/
-	main section#middle-button {
-
-	}/*should be middle of site on desktop only*/
+	}/* handles grid layout of sections */
 } /*end media query for larger than xs devices*/
+
+/* COLOR CLASSES OF THIS SITE */
 
 .orange {
 	color: rgba(255,153,0);
 }
 
-/*START NAVIGATION STYLES, BELOW*/
-#brand {
-	color: black;
-	padding-left: 40px;
-	font-size: 25px;
-}
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: (255,255,255,0.6) !important;
-}
-nav ul {
-
-}
-nav ul li {
-	text-decoration: none;
-	list-style: none;
-
-}
-nav ul li a {
-	color: rgba(76,50,87,1.0);
-}
-
 .white {
 	color: white !important;
 }
-
-
-/*page layout and sizing*/
-
 
 
 
