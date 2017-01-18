@@ -23,21 +23,24 @@ large and desktop
 
 body {
   /*  margin-top: 50px; *//* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #333; /*aka rgb(71,71,71)*/
-    color: #eee;
+    background-color: white; /*aka rgb(71,71,71)*/
+   	color: rgba(76,50,87,1.0);	
     padding: 35px;
+    width: 100%;
+	padding: 0;
     /*display: flex;*/
 }
-
 .btn-default {
 	background-color: transparent;
-	color: white;
+	color: black !important;
 	font-style: Helvetica;
+	border: 1px solid black;
+	margin: 20px;
 }
 .btn-default:hover {
-	background-color: rgba(130,130,130,0.5);
 	transition: ease-in 0.3s;
-	color: white;
+	color: black;
+	border: 1px solid black;
 }
 
 #center-main-section {
@@ -45,14 +48,9 @@ body {
 	text-align: center;
 	padding: 25px 25px 40px 25px;
 }/*default for all screen sizes*/
-
 .center-of-page {
 	position: fixed;
 	margin: 0 auto;
-}
-body {
-	width: 100%;
-	padding: 0;
 }
 main {
 	width: 100%;
@@ -62,30 +60,31 @@ main section {
 }
 /*below is styling for backgrounds of each section since sass isn't installed yet*/
 main #center-main-section {
-	background-color: rgba(160,160,160,10);
 	padding: 50px;
-	/*color: rgba(36,0,41,1.0);*/
-	/*color: rgba(46,6,40,1.0);*/
-	color: rgba(76,50,87,1.0);	
+	color: rgba(76,50,87,1.0); /*nirmal font color on lighter backgrounds*/
 }/*summary area*/
 main #center-main-section h1 {
 	color: rgba(46,6,40,1.0);
 }
-main section#why-responsive {
-	background-color: rgba(130,130,130,10);
+main section {
 	padding: 50px;
+}
+main section:nth-child(2n) {
+	/*background-color: rgba(130,130,130,10);*/
+	background-color: rgba(63,67,64,1.0);
+	color: #eee;
+}
+main section#why-responsive {
+
 }/*first section, upper left*/
 main section#your-options {
-	background-color: rgba(100,100,100,10);
-	padding: 40px;
+
 }/*second section, upper right*/
 main section#why-us {
-	background-color: rgba(70,70,70,10);
-	padding: 50px;
+
 }/*third section, lower left*/
 main section#portfolio {
-	background-color: rgba(40,40,40,10);
-	padding: 50px;
+
 }/*fourth section, lower right*/
 
 
@@ -95,33 +94,58 @@ main section#portfolio {
 	}/*for maing summary area to be centered when grid view*/
 	main section {
 		float: left;
+		min-height: 500px;
 	}
 	main section#why-responsive {
-		min-height: 500px;
+	
 	}/*first section, upper left*/
 	main section#your-options {
-		min-height: 500px;
+	
 	}/*second section, upper right*/
 	main section#why-us {
-		min-height: 500px;
+		
 	}/*third section, lower left*/
 	main section#portfolio {
-		min-height: 500px;
+
 	}/*fourth section, lower right*/
 	main section#middle-button {
 
 	}/*should be middle of site on desktop only*/
 } /*end media query for larger than xs devices*/
 
+.orange {
+	color: rgba(255,153,0);
+}
 
+/*START NAVIGATION STYLES, BELOW*/
+#brand {
+	color: black;
+	padding-left: 40px;
+	font-size: 25px;
+}
 nav {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	display: none;
-	/*todo unhide the nav*/
+	background-color: (255,255,255,0.6) !important;
 }
+nav ul {
+
+}
+nav ul li {
+	text-decoration: none;
+	list-style: none;
+
+}
+nav ul li a {
+	color: rgba(76,50,87,1.0);
+}
+
+.white {
+	color: white !important;
+}
+
 
 /*page layout and sizing*/
 
