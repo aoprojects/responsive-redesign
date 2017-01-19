@@ -1,4 +1,4 @@
-body {
+fbody {
 	font-family: Arial;
 }
 li {
@@ -15,7 +15,7 @@ li {
 }
 
 .btn-default {
-	background-color: transparent;
+	/*background-color: transparent;*/
 	color: black !important;
 	font-style: Helvetica;
 	border: 1px solid black;
@@ -23,9 +23,10 @@ li {
 	border-radius: 2px;
 }
 .btn-default:hover {
-	/*transition: ease-in 0.1s;*/
+	transform: scale(1.1);
 	color: black;
-	border: 2px solid black;
+	transition: ease-in 0.1s;
+	/*border: 2px solid black;*/
 	border-radius: 0px;
 	background-color: transparent;
 	/*font-weight: 600;*/
