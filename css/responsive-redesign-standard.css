@@ -15,7 +15,20 @@ li {
 }
 
 .btn-default {
-
+	background-color: transparent;
+	color: black !important;
+	font-style: Helvetica;
+	border: 1px solid black;
+	margin: 20px;
+	border-radius: 2px;
+}
+.btn-default:hover {
+	/*transition: ease-in 0.1s;*/
+	color: black;
+	border: 2px solid black;
+	border-radius: 0px;
+	background-color: transparent;
+	/*font-weight: 600;*/
 }
 
 /* FOOTER */
@@ -25,12 +38,11 @@ footer {
 	font-size: 16px;
 }
 
-
 /* NAVIGATION */
 /*begin default styles for all NAVIGATION sizes*/
 nav {
 	position: relative;
-	background-color: rgba(63,67,64,1.0);
+	background-color: rgba(63,67,64,1.0); /*dark gray*/
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -43,6 +55,21 @@ nav #brand {
 	padding-top: 0px;
 	font-size: 25px;
 }
+nav #hamburger {
+	color: #eee;
+	font-size: 25px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 25px;
+}
+nav #hamburger:hover {
+	background-color: #525153;
+	cursor: pointer;
+	color: white;
+	font-size: 27px;
+}
+/* click this to drop down nav on tablet and mobile sizes */
 nav ul {
 
 }

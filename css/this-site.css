@@ -30,18 +30,6 @@ body {
 	padding: 0;
     /*display: flex;*/
 }
-.btn-default {
-	background-color: transparent;
-	color: black !important;
-	font-style: Helvetica;
-	border: 1px solid black;
-	margin: 20px;
-}
-.btn-default:hover {
-	transition: ease-in 0.3s;
-	color: black;
-	border: 1px solid black;
-}
 
 #center-main-section {
 	display: hidden;
