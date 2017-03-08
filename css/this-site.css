@@ -50,6 +50,7 @@ body {
 }
 h2 {
 	text-align: center;
+	color: rgba(255,153,0,1.0);
 }
 main {
 	width: 100%;
@@ -91,6 +92,15 @@ main section:nth-child(2n) {
 }
 .moderate-white {
 
+}
+.portfolio-item {
+	padding: 40px;
+	border: 1px solid white;
+}
+.portfolio-item:hover {
+	/*background: #ddd;*/
+	border: 1px solid rgba(255,153,0,1.0);
+	transform: ease-in 0.2s;
 }
 .pure-white {
 	color: white !important;
