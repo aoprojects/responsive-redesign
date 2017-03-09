@@ -5,3 +5,9 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 // below is written custom for this site
 
+$( document ).ready(function() {
+	$( "#xs_hamburger" ).click(function() {
+		$( "#nav_elements" ).toggle( "fast" );
+		$(this).toggleClass("hamburger_clicked");
+	});
+});

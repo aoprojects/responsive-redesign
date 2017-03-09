@@ -1,3 +1,18 @@
+note: bootstrap breakpoints are as follows
+
+xs and mobile
+tiniest to 767px
+
+small and tablet
+768px - 991px
+
+medium and desktop
+992px - 1199px
+
+large and desktop
+1200px and up
+
+*/
 
 
 a {
@@ -90,7 +105,7 @@ nav #brand {
 	padding-top: 0px;
 	font-size: 25px;
 }
-nav #hamburger {
+nav #xs_hamburger {
 	color: #eee;
 	font-size: 25px;
 	position: fixed;
@@ -98,7 +113,7 @@ nav #hamburger {
 	right: 0;
 	padding: 25px;
 }
-nav #hamburger:hover {
+nav #xs_hamburger:hover {
 	background-color: #525153;
 	cursor: pointer;
 	color: rgba(229,137,0,1.0);
@@ -132,9 +147,11 @@ nav ul li a:hover {
 	color: rgba(229,137,0,1.0);
 }
 
+
 }/* NAVIGATION styles for tablets and mobile */
 
 @media only screen and (min-width: 768px) {
+
 	nav ul {
 		position: fixed;
 		top: 0;
@@ -146,4 +163,25 @@ nav ul li a:hover {
 		padding: 15px;
 	}
 }/* end media query for large screen sizes */
-/* END NAVIGATION DEFAULT STYLES */
+
+@media only screen and (min-width: 992px) {
+	/*begin styling for navigation*/
+	nav ul {
+		position: fixed;
+		right: 0;
+		/*top: 0;*/
+	}
+	nav ul li {
+		width: 20%;
+		float: left;
+		position: relative;
+		top: -55px;
+	}
+	#xs_hamburger {
+		display: none;
+	}
+	/*end styling for navigation*/
+}/*display for desktop screens only*/
+
+
+/* END NAVIGATION DEFAULT STYLES 

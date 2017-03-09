@@ -4,23 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-/*note: bootstrap breakpoints are as follows
-
-xs and mobile
-tiniest to 767px
-
-small and tablet
-768px - 991px
-
-medium and desktop
-992px - 1199px
-
-large and desktop
-1200px and up
-
-*/
-
-
 /*
 	NOTE:
 	MAIN COLOR THEME FOR THIS SITE
@@ -37,6 +20,17 @@ body {
     width: 100%;
 	padding: 0;
     /*display: flex;*/
+}
+
+.btn-success {
+	background-color: rgba(255,153,0,0.5);
+	border: 1px solid rgba(255,153,0,1.0);
+	border-radius: 0px;
+	font-size: 14px;
+}
+.btn-success:hover {
+	background-color: rgba(255,153,0,0.7);
+	border: 1px solid rgba(255,153,0,1.0);	
 }
 
 #center-main-section {
